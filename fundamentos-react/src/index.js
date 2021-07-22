@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 
 import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
 
 const tag =  <strong>Olá Mundo 3</strong>
 ReactDOM.render(
     <div>
       <Primeiro/>
-    </div>,  
-    document.getElementById('root')
+      <ComParametro 
+        titulo="Situação do Aluno"
+        aluno="Marcos Paulo "
+        nota={ 9.3 }/>
+    </div>
+    ,document.getElementById('root')
 );
